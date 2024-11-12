@@ -1,0 +1,12 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "My Personal Website (90's Themed)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "author": "Zachary Rosario",
+  "license": "ISC"
+}
