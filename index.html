@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Zach Rosario - Student, Programmer, Archivist</title>
     <style>
-      @font-face {
-        font-family: 'CustomFont';
-        src: url('/redalert.ttf') format('truetype'); /* Adjust the path and format as needed */
-      }
-      
-      body {
-        margin: 0;
-        height: 100vh;
-        max-width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        background-color: #000000;
-        background-image: url('/ForDumbStupidZach.png'); 
-        background-size: cover; 
-        background-position: center; 
-      }
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('/redalert.ttf') format('truetype');
+        }
 
-      .button-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        top: 10px;
-        left: -450px;
-      }
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
 
-      .button-container button {
-        font-size: 25px;
-        font-family: 'CustomFont', sans-serif;
-        border: 4px solid #fff; 
-        border-radius: 20px;
-        cursor: pointer;
-        background-color: rgba(251, 0, 0, 0.8); 
-        color: #fff;
-        transition: background-color 0.3s, color 0.3s;
-        height: 50px; 
-        width: 200px; 
-      }
+        .container {
+            width: 90%;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
 
-      .button-container button:hover {
-        background-color: rgb(119, 0, 0); 
-      }
+        .background-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-image: url('/ForDumbStupidZach.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-      .button-container button:nth-child(1) {
-        margin-top: 6px; 
-      }
+        .button-container {
+            position: absolute;
+            top: 55%;        
+            left: 22%;       
+            transform: translate(-22%, -53%); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container button {
+            font-size: 2vw;
+            font-family: 'CustomFont', sans-serif;
+            border: 0.18em solid #fff;
+            border-radius: 1.5em;
+            cursor: pointer;
+            background-color: rgba(251, 0, 0, 0.8);
+            color: #fff;
+            width: 220%;
+            padding: 0.1em;
+            margin-bottom: 28%;
+        }
+
+        .button-container button:hover {
+            background-color: rgb(119, 0, 0);
+        }
     </style>
-  </head>
-  <body>
-    <div class="button-container">
-      <button>About Me</button>
-      <button>Projects</button>
-      <button>Resume</button>
+</head>
+<body>
+    <div class="container">
+        <div class="background-container">
+            <div class="button-container">
+                <button>About Me</button>
+                <button>Projects</button>
+                <button>Resume</button>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
