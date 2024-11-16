@@ -14,33 +14,31 @@
         }
 
         .container {
-            width: 90%;
-            max-width: 1920px;
-            margin: 0 auto;
-            padding-top: 50px;
+            width: 100%;
+            margin: -10vh auto 0 auto;
         }
 
         .background-container {
             position: relative;
             width: 100%;
-            aspect-ratio: 16 / 9;
-            background-image: url('./public/ForDumbStupidZach.png');
-            background-size: cover;
+            background-image: url('./public/site-other-bckg.png');
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            min-height: 150vh;
         }
 
         .button-container {
             position: absolute;
-            top: 37%;        
-            left: 20%;       
+            top: 20%;        
+            left: 30.5%;       
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .button-container button {
-            font-size: 2vw;
+            font-size: 1vw;
             font-family: 'CustomFont', sans-serif;
             border: 0.18em solid #fff;
             border-radius: 1.5em;
@@ -49,41 +47,28 @@
             color: #fff;
             width: 220%;
             padding: 0.1em;
-            margin-bottom: 28%;
+            margin-bottom: 10%;
         }
 
         .button-container button:hover {
             background-color: rgb(119, 0, 0);
         }
 
-        .github-logo {
-          width: 1.8%;  
-          height: 3%;
-          transition: transform 0.3s;
-          position: absolute;
-          right: 25.5%;
-          bottom: 51.5%;
+        .invisible-home-link {
+            position: fixed;
+            left: 30%;
+            top: 5%;
+            width: 40vw;
+            height: 5vw;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 1000;
         }
-
-        .github-logo:hover {
-            transform: scale(1.2);
-        }
-
-        .linkedin-logo {
-            width: 1.8%;
-            height: 3%;
-            transition: transform 0.3s;
-            position: absolute;
-            right: 24.6%;
-            bottom: 47.5%;
-        }
-
-        .linkedin-logo:hover {
-            transform: scale(1.2);
-        } 
     </style>
 </head>
 <body>
+    <a href="index.html" class="invisible-home-link" aria-label="Go to Home"></a>
+
     <div class="container">
         <div class="background-container">
             <div class="button-container">
@@ -91,17 +76,6 @@
                 <button onclick="window.location.href='projects.html'">Projects</button>
                 <button onclick="window.location.href='resume.html'">Resume</button>
             </div>
-            <div>
-              <a href="https://github.com/zachjesus" target="_blank" rel="noopener noreferrer">
-                <img src="./public/github-mark-white.png" alt="GitHub" class="github-logo">
-              </a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/zachary-rosario-623393255/" target="_blank" rel="noopener noreferrer">
-                <img src="./public/in-white.png" alt="LinkedIn" class="linkedin-logo">
-              </a>
-            </div>
-        </div>
     </div>
 </body>
 </html>
