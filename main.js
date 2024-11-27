@@ -37,6 +37,7 @@ function init() {
     // defineCameraPath();
     loadModel();
     window.addEventListener('resize', onWindowResize, false);
+    window.addEventListener('load', onWindowResize, false);
 
     const gathering = new Tween(uniforms.particles.action)
         .to({ value: 1 }, 30000)
@@ -88,7 +89,7 @@ function initCamera() {
 
 function initRenderer() {
     renderer = new THREE.WebGLRenderer({
-        alpha: false,
+        alpha: true,
         antialias: true
     });
     renderer.setClearColor(0x000000, 1);
@@ -350,7 +351,7 @@ function fillWithPoints(mesh, count) {
     const vps = new THREE.Vector3();
     let counter = 0;
 
-    const offScreenRadius = Math.max(bsize.x, bsize.y, bsize.z) * 2;
+    const offScreenRadius = Math.max(bsize.x, bsize.y, bsize.z) * 8;
 
     while (counter < count) {
         v.set(
@@ -397,6 +398,7 @@ function onWindowResize() {
     const height = window.innerHeight;
     
     renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio || 1);
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
 }

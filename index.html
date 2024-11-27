@@ -16,18 +16,30 @@
         }
 
         .container {
+            display: flex;                    
+            justify-content: center;          
+            align-items: center;                             
+            position: relative;   
+            width: 100%;           
+            padding-top: 7vh;                       
+            margin: 0;                       
+        }
+
+        .renderer-container {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            margin: 0 auto;
-            position: relative;
-            padding-top: 40px;
+            height: 100%;
+            z-index: -1; /* Ensures the canvas is behind other content */
         }
 
         .background-container {
             position: relative;
             width: 1553px;
-            height: 866px;      
-            /* aspect-ratio: 16 / 9; */
-            margin: 0 auto; /* Center the container horizontally */
+            height: 866px;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto; 
             background-image: url('./public/ForDumbStupidZach.png');
             background-size: cover;
             background-repeat: no-repeat;
