@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Zach Rosario - Student, Programmer, Archivist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
         @font-face {
             font-family: 'CustomFont';
@@ -14,16 +16,18 @@
         }
 
         .container {
-            width: 90%;
-            max-width: 1920px;
+            width: 100%;
             margin: 0 auto;
+            position: relative;
             padding-top: 50px;
         }
 
         .background-container {
             position: relative;
-            width: 100%;
-            aspect-ratio: 16 / 9;
+            width: 1553px;
+            height: 866px;      
+            /* aspect-ratio: 16 / 9; */
+            margin: 0 auto; /* Center the container horizontally */
             background-image: url('./public/ForDumbStupidZach.png');
             background-size: cover;
             background-repeat: no-repeat;
@@ -33,23 +37,23 @@
         .button-container {
             position: absolute;
             top: 37%;        
-            left: 20%;       
+            left: 14.5%;       
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .button-container button {
-            font-size: 2vw;
+            font-size: 2.0rem;
             font-family: 'CustomFont', sans-serif;
-            border: 0.18em solid #fff;
+            border: 0.3rem solid #fff;
             border-radius: 1.5em;
             cursor: pointer;
             background-color: rgb(208, 4, 4);
             color: #fff;
-            width: 220%;
-            padding: 0.1em;
-            margin-bottom: 28%;
+            width: 15rem;
+            padding: 0.1rem;
+            margin-bottom: 21%;
         }
 
         .button-container button:hover {
@@ -62,7 +66,7 @@
           transition: transform 0.3s;
           position: absolute;
           right: 25.5%;
-          bottom: 51.5%;
+          bottom: 51.2%;
         }
 
         .github-logo:hover {
@@ -74,8 +78,8 @@
             height: 3%;
             transition: transform 0.3s;
             position: absolute;
-            right: 24.6%;
-            bottom: 47.5%;
+            right: 24.5%;
+            bottom: 47.3%;
         }
 
         .linkedin-logo:hover {
@@ -103,5 +107,6 @@
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
