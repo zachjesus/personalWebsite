@@ -5,7 +5,7 @@
     <style>
         @font-face {
             font-family: 'CustomFont';
-            src: url('./public/redalert.ttf') format('truetype');
+            src: url('/redalert.ttf') format('truetype');
         }
 
         body {
@@ -24,7 +24,7 @@
             width: 953px;
             height: 1284px;
             margin: 0 auto;
-            background-image: url('./public/site-other-bckg.png');
+            background-image: url('/site-other-bckg.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -74,6 +74,28 @@
             background-color: transparent;
             cursor: pointer;
         }
+
+        .img-me {
+            position: absolute;
+            left: 50%;
+            top: 14%;
+            width: 30%;
+            height: auto;
+            border: 4px solid yellow;
+            border-radius: 20px;
+        }
+
+        .custom-text {
+            position: absolute;
+            top: 45%; 
+            left: 28%;
+            font-size: 1.9rem; 
+            font-family: 'CustomFont', sans-serif;
+            color: #ededed; 
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, .7);
+            text-align: left;
+            width: 60%; 
+        }
     </style>
 </head>
 <body>
@@ -86,6 +108,13 @@
                 <button onclick="window.location.href='about-me.html'">About Me </button>
                 <button onclick="window.location.href='projects.html'">Projects</button>
                 <button onclick="window.location.href='resume.html'">Resume</button>
+            </div>
+            <img src="/hikingme2.jpg" class="img-me"/>
+            <div class="custom-text">
+            Hey there!
+            My name is Zachary Rosario and I am a Junior at Stevens Institute of Technology. I am double majoring in both Science Technology and Society as well as Computer Science. 
+            I am hoping to bring my deep understanding of technology to the world of Libraries and Archives. Currently I volunteer at the New York Genealogy & Biographical Society and work closely with Stevens Archives. I also work as a researcher at Stevens, working to revamp Professor Alex Wellersteins NUKEMAP and build his new open source weapons effects library.
+            Im an avid Science Fiction fan, spending my freetime mostly reading. My main goals for this and the upcoming year are: To become proficient in C++; To gain more experience working in archives; To finally finish all the original Dune books. 
             </div>
         </div>
     </div>

@@ -397,9 +397,9 @@ function onWindowResize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
     
-    renderer.setSize(width, height);
+    // renderer.setSize(width, height);
     renderer.setPixelRatio(window.devicePixelRatio || 1);
-    camera.aspect = width / height;
+    // camera.aspect = width / height;
     camera.updateProjectionMatrix();
 }
 
