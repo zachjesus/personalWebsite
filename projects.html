@@ -74,6 +74,33 @@
             background-color: transparent;
             cursor: pointer;
         }
+
+        .img {
+            position: absolute;
+            left: 57%;
+            top: 23.5%;
+            width: 30%;
+            height: auto;
+            border: 4px solid yellow;
+            border-radius: 20px;
+        }
+
+        .custom-text {
+            position: absolute;
+            top: 10%; 
+            left: 27%;
+            font-size: 1.9rem; 
+            font-family: 'CustomFont', sans-serif;
+            color: #ededed; 
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, .7);
+            text-align: left;
+            width: 60%; 
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: goldenrod;
+        }
     </style>
 </head>
 <body>
@@ -87,6 +114,23 @@
                 <button onclick="window.location.href='projects.html'">Projects</button>
                 <button onclick="window.location.href='resume.html'">Resume</button>
             </div>
+            <pre class="custom-text">
+                    <b class="title">> NUKEMAP REACT</b>
+                    - Rewriting NUKEMAP in React.js.
+                    - Uses: React.js, Mapbox GL, 
+                      Leaflet, Jotai, Tailwind, Webpack.
+<b class="title">> AWEL</b>
+- Open source Atomic 
+Weapons Effects 
+Library.
+- Allows any type of 
+input unit(s). Compare Soviet vs. U.S. equations.
+- Uses: JavaScript.
+            </pre>
+            <img src="/nukemap.png" class="img"/>
+            <img src="/fallout.jpg" 
+            class="img"
+            style="top:40%; left: 52%; width:35%"/>
         </div>
     </div>
 </body>

@@ -27,7 +27,6 @@ let uniforms = {
 };
 
 init();
-animate();
 
 function init() {
     initScene();
@@ -137,6 +136,7 @@ function loadModel() {
         mesh.visible = false;
 
         createPoints(mesh);
+        animate();
     });
 }
 
@@ -405,7 +405,7 @@ function onWindowResize() {
 
 function animate(time) {
     requestAnimationFrame(animate);
-    group.update(time * 10); 
+    group.update(time * 6); 
 
     // if (cameraProgress <= 1) {
     //     cameraProgress += cameraSpeed;
