@@ -14,11 +14,11 @@ const resumeButton = document.getElementById('btn-resume');
 const homeButton  = document.getElementById('home-link');
 
 homeButton?.addEventListener('click', () => {
-    window.location.href = '/index';
+    window.location.href = '/';
 });
 
 aboutMeButton?.addEventListener('click', () => {
-    window.location.href = '/about-me.html';
+    window.location.href = '/about-me';
 });
 
 projectsButton?.addEventListener('click', () => {
