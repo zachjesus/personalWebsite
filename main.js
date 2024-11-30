@@ -426,3 +426,13 @@ function animate(time) {
     controls.update();
     renderer.render(scene, camera);
 }
+
+const img = document.querySelector('.img');
+
+function zoom(event) {
+  const img = event.target;
+  img.style.transformOrigin = event.offsetX + 'px ' + event.offsetY + 'px';  
+  img.classList.toggle('zoom');  
+}
+
+img.addEventListener('click', zoom);

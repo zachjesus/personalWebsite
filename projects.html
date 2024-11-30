@@ -77,29 +77,55 @@
 
         .img {
             position: absolute;
-            left: 57%;
-            top: 23.5%;
-            width: 30%;
             height: auto;
             border: 4px solid yellow;
             border-radius: 20px;
         }
 
         .custom-text {
-            position: absolute;
-            top: 10%; 
-            left: 27%;
             font-size: 1.9rem; 
             font-family: 'CustomFont', sans-serif;
             color: #ededed; 
-            text-shadow: 2px 2px 1px rgba(0, 0, 0, .7);
+            text-shadow: 2px 3px 0px rgba(0, 0, 0, 1);
             text-align: left;
-            width: 60%; 
+            width: 100%; 
+            line-height: 1;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
         }
 
         .title {
             font-size: 2.5rem;
             color: goldenrod;
+        }
+        .nm {
+            position: absolute;
+            top: 12%;
+            left: 48%;
+        }
+        .awel{
+            position: absolute;
+            top: 23.5%;
+            left: 27%;
+        }
+        .matrix{
+            position: absolute;
+            top: 42%;
+            left: 27%;
+        }
+        .irc{
+            position: absolute;
+            top: 56%;
+            left: 59%;
+        }
+        .book{
+            position: absolute;
+            top: 69%;
+            left: 27%;
         }
     </style>
 </head>
@@ -114,41 +140,66 @@
                 <button onclick="window.location.href='projects.html'">Projects</button>
                 <button onclick="window.location.href='resume.html'">Resume</button>
             </div>
-            <pre class="custom-text">
-                    <b class="title">> NUKEMAP REACT</b>
-                    - Rewriting NUKEMAP in React.js.
-                    - Uses: React.js, Mapbox GL, 
-                      Leaflet, Jotai, Tailwind, Webpack.
-<b class="title">> AWEL</b>
-- Open source Atomic 
-Weapons Effects 
-Library.
-- Allows any type of 
-input unit(s). Compare Soviet vs. U.S. equations.
-- Uses: JavaScript.
-<b class="title">> Matrix</b>
-- Converts any 3D 
-model into points cloud made up of 1's and 0's.
-- See homepage for working example. 
-- Uses: Three.js, Tween.js, Three-mesh-bvh.
-                                <b class="title">> IRC Chat</b>
-                                - Desktop app 
-                                implementing IRC 
-                                protocol. 
-                                - Uses: .NET, C#, MVVM, 
-                                Avalonia. 
-            </pre>
-            <img src="/nukemap.png" class="img"/>
+            <div class="custom-text">
+                <div class = "nm">
+                    <span class="title">> NUKEMAP REACT</span>
+                    <p>- Rewriting NUKEMAP in React.js.</p>
+                    <p>- Uses: React.js, Mapbox GL,</p>
+                    <p>Leaflet, Jotai, Tailwind, Webpack.</p>
+                </div>
+                
+                <div class="awel">
+                    <span class="title">> AWEL</span>
+                    <p>- Open source Atomic</p>
+                    <p>Weapons Effects</p>
+                    <p>Library.</p>
+                    <p>- Allows any type of</p>
+                    <p>input unit(s). Compare Soviet vs. U.S. equations.</p>
+                    <p>- Uses: JavaScript.</p>
+                </div>
+                
+                <div class="matrix">
+                    <span class="title">> Matrix</span>
+                    <p>- Converts any 3D</p>
+                    <p> model into points cloud made up of 1's and 0's.</p>
+                    <p>- See homepage for working example.</p>
+                    <p>- Uses: Three.js, Tween.js, Three-mesh-bvh.</p>
+                </div>
+                
+                <div class="irc">
+                    <span class="title">> IRC Chat</span>
+                    <p>- Desktop app</p>
+                    <p>implementing IRC</p>
+                    <p> protocol.</p>
+                    <p>- Uses: .NET, C#, MVVM,</p>
+                    <p>Avalonia.</p>
+                </div>
+                <div class="book"> 
+                    <span class="title">> WormBook</span>
+                    <p>- Good reads but open source, </p>
+                    <p> self hosted and customizable</p>
+                    <p>+ way more fun.</p>
+                    <p>- Uses: Python, SQL, Docker </p>  
+                    <p>Note: Heavy W.I.P </p>  
+                    <p>redoing tech stack.</p>
+                </div>
+            </div>
+            <img src="/nukemap.png" 
+            class="img"
+            style="left: 57%; top: 22.75%; width:30%"/>
             <img src="/fallout.jpg" 
             class="img"
-            style="top:39.5%; left: 54%; width:33%"/>
+            style="top:38.75%; left: 54%; width:33%"/>
             <video src="name.mp4" class="img" controls
-            style="top:55.5%; left: 26.5%">
+            style="top:55%; left: 26.5%; width:30%">
                 Your browser does not support the video tag.
             </video>
             <img src="/irc.png" 
             class="img"
             style="top:72%; left: 67%; width:20%"/>
+            <img src="/wormbook.png" 
+            class="img"
+            style="top:82%; left: 52%; width:12%"/>
         </div>
     </div>
 </body>

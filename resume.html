@@ -83,7 +83,20 @@
             height: auto;
             border: 6px solid yellow;
             border-radius: 20px;
+            transition: transform 0.25s ease, left 0.25s ease, top 0.25s ease;
+            transform-origin: center center;
+            cursor: zoom-in;
         }
+
+        input[type=checkbox] {
+            display: none;
+        }
+
+        input[type=checkbox]:checked + label .img {
+            cursor: zoom-out;
+            transform: scale(1.9);
+        }
+
     </style>
 </head>
 <body>
@@ -97,8 +110,13 @@
                 <button onclick="window.location.href='projects.html'">Projects</button>
                 <button onclick="window.location.href='resume.html'">Resume</button>
             </div>
-            <img src="/rosario_resume_v1.7-1.png" class="img">
-        </div>
+
+            <input type="checkbox" id="zoom-checkbox" />
+
+            <label for="zoom-checkbox">
+                <img src="/rosario_resume_v1.7-1.png" class="img" alt="Resume"/>
+            </label>
+\        </div>
     </div>
 </body>
 </html>
