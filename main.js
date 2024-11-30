@@ -121,6 +121,7 @@ async function loadName() {
                 camera.position.set(0, 0, 75);
             }
           };
+          window.mobileCheck();
     }
 
     function initRenderer() {
