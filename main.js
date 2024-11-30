@@ -405,7 +405,7 @@ function onWindowResize() {
 
 function animate(time) {
     requestAnimationFrame(animate);
-    group.update(time * 6); 
+    group.update(time * 6.5); 
 
     // if (cameraProgress <= 1) {
     //     cameraProgress += cameraSpeed;
