@@ -122,15 +122,11 @@ async function loadName() {
             alpha: true,
             antialias: true
         });
+        const rendererContainer = document.querySelector('.renderer-container');
+
         renderer.setClearColor(0x000000, 1);
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-        renderer.domElement.style.position = 'absolute';
-        renderer.domElement.style.top = '-41%';
-        renderer.domElement.style.left = '0%';
-        renderer.domElement.style.width = '100%';
-        renderer.domElement.style.height = '100%';
-        renderer.domElement.style.zIndex = '-1';
+        renderer.setSize(1820, 980);
+        rendererContainer.appendChild(renderer.domElement);
     }
 
     function initControls() {
@@ -425,9 +421,6 @@ async function loadName() {
     }
 
     function onWindowResize() {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        
         // renderer.setSize(width, height);
         renderer.setPixelRatio(window.devicePixelRatio || 1);
         // camera.aspect = width / height;
