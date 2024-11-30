@@ -108,12 +108,12 @@
     <div class="container">
         <div class="background-container">
             <div class="invisible-home-link-container">
-                <a href="index.html" class="invisible-home-link"></a>
+                <a id="home-link" class="invisible-home-link"></a>            
             </div>
             <div class="button-container">
-                <button onclick="window.location.href='/about-me.html'">About Me </button>
-                <button onclick="window.location.href='/projects.html'">Projects</button>
-                <button onclick="window.location.href='/resume.html'">Resume</button>
+                <button id="btn-about-me">About Me</button>
+                <button id="btn-projects">Projects</button>
+                <button id="btn-resume">Resume</button>
             </div>
             <img src="/hikingme2.jpg" class="img"/>
             <div class="custom-text">
@@ -126,5 +126,6 @@
             </div>
         </div>
     </div>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>

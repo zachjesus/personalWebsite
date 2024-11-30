@@ -103,20 +103,20 @@
     <div class="container">
         <div class="background-container">
             <div class="invisible-home-link-container">
-                <a href="index.html" class="invisible-home-link"></a>
+                <a id="home-link" class="invisible-home-link"></a>            
             </div>
             <div class="button-container">
-                <button onclick="window.location.href='/about-me.html'">About Me </button>
-                <button onclick="window.location.href='/projects.html'">Projects</button>
-                <button onclick="window.location.href='/resume.html'">Resume</button>
+                <button id="btn-about-me">About Me</button>
+                <button id="btn-projects">Projects</button>
+                <button id="btn-resume">Resume</button>
             </div>
-
             <input type="checkbox" id="zoom-checkbox" />
 
             <label for="zoom-checkbox">
                 <img src="/rosario_resume_v1.7-1.png" class="img" alt="Resume"/>
             </label>
-\        </div>
+        </div>
     </div>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
