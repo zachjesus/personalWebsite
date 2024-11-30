@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const helmet = require('helmet'); 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 1000;
 
 app.use(helmet());  
 
@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
     res.status(404).send('Page not found');
   });
   
-  app.listen(port, () => {
+  app.listen(port, '0.0.0.0', () => {
     console.log(`Server is running on port ${port}`);
   });
